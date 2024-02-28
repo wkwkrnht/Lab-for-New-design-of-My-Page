@@ -1,0 +1,58 @@
+article.article-base
+    header.article-header 
+        img.article-eyecatch src='/image.jpg' alt='eyecatch' loading='lazy'
+        h2 記事ページ
+        ul.tag-cloud
+            li
+                a href='/' tabindex='0'
+    main.article-main
+        p 親譲りの無鉄砲で小供の時から損ばかりしている。小学校に居る時分学校の二階から飛び降りて一週間ほど腰を抜かした事がある。なぜそんな無闇をしたと聞く人があるかも知れぬ。別段深い理由でもない。新築の二階から首を出していたら、同級生の一人が冗談に、いくら威張っても、そこから飛び降りる事は出来まい。弱虫やーい。と囃したからである。小使に負ぶさって帰って来た時、おやじが大きな眼をして二階ぐらいから飛び降りて腰を抜かす奴があるかと云ったから、この次は抜かさずに飛んで見せますと答えた。（青空文庫より）
+        table
+            tr
+                th Entry Header 1
+                th Entry Header 2
+                th Entry Header 3
+                th Entry Header 4
+            tr
+                td Entry First Line 1
+                td Entry First Line 2
+                td Entry First Line 3
+                td Entry First Line 4
+            tr
+                td Entry Line 1
+                td Entry Line 2
+                td Entry Line 3
+                td Entry Line 4
+            tr
+                td Entry Last Line 1
+                td Entry Last Line 2
+                td Entry Last Line 3
+                td Entry Last Line 4
+        h3 Aenean commodo ligula eget dolor aenean massa
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        h4 Aenean commodo ligula eget dolor aenean massa
+        p Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.
+        h5 Aenean commodo ligula eget dolor aenean massa
+        p
+            ul
+                li Lorem ipsum dolor sit amet consectetuer.
+                li Aenean commodo ligula eget dolor.
+                li Aenean massa cum sociis natoque penatibus.
+            ol
+                li Lorem ipsum dolor sit amet consectetuer.
+                li Aenean commodo ligula eget dolor.
+                li Aenean massa cum sociis natoque penatibus.
+        h6 Aenean commodo ligula eget dolor aenean massa
+        p 
+            blockquote Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <strong>strong</strong>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In <em>em</em> enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam <a class="external ext" href="#">link</a>dictum felis eu pede mollis pretium.
+    footer.article-footer
+        = partial 'partials/share-button'
+        section class='big-card related-articles'
+            h2 最新記事
+            ul.card-list
+                - 3.times do
+                    li
+                        a.mini-card href='/' title='記事タイトル' tabindex='0'
+                            img.card-img src='/images/no-img.png' alt='アイキャッチ' loading='lazy'
+                            time.card-date 1970-1-1
+                            h3.card-title 記事タイトル
