@@ -25,7 +25,7 @@ html
                     = title
             search.search-form-wrapper
                 form.keyword-search action='https://duckduckgo.com/' role='search'
-                    input name='sites' type='hidden' value=site_data.base_url
+                    input name='sites' type='hidden' value='/'
                     input name='q' type='search' required='' aria-label='キーワード検索'
                     button type='submit' aria-label='検索実行'
                         span class='fas fa-search'
@@ -33,6 +33,5 @@ html
                 a href='/' title='contact' tabindex='0' Contact
                 a href='/article.html' title='blog' tabindex='0' Blog
                 a href='/' title='about' tabindex='0' About
-                
 
         = yield
