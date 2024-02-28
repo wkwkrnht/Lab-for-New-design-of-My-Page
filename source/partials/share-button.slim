@@ -1,15 +1,16 @@
 - site_title = 'テストサイト'
 - meta_url = 'meta'
 - twitter = 'twitter'
-- if current_article
+/- if current_article
     - title = current_article.title + '-' + site_title
-- elsif current_page.data.title
+/- elsif current_page.data.title
     - title = current_page.data.title + '-' + site_title
-- elsif content_for?(:title)
+/- elsif content_for?(:title)
     - title = yield_content(:title) + '-' + site_title
-- else
+/- else
+
     - title = site_title
-- if current_page
+/- if current_page
     - meta_url = meta_url + current_page.url
 
 ul.share-button
