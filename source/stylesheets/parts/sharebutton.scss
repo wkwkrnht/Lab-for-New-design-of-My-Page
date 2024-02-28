@@ -1,0 +1,19 @@
+@import 'variables';
+.share-button{
+    &::before{
+        content:"Share:";
+        padding:initial 1em;
+    }
+
+    & li{
+        display:inline-block;
+        font-size:1.3em;
+        text-align:center;
+        width:2em;
+    }
+}
+
+.fa-instapaper,
+.fa-hatebu{
+    font-weight:bold;
+}

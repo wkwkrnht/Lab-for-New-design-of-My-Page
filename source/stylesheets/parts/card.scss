@@ -1,0 +1,70 @@
+@import 'variables';
+$card-ratio:calc(#{$card-size} / 4 * 3);
+
+.card-list{
+    align-content:space-around;
+    align-items:baseline;
+    display:flex;
+    flex-flow:row wrap;
+    justify-content:space-evenly;
+}
+
+.mini-card{
+    display:block;
+    height:#{$card-size};
+    margin:calc(#{$base-vertical-rythm} * 2) auto;
+    overflow:hidden;
+    position:relative;
+    width:#{$card-size};
+    @include base-backplate;
+}
+.card-img,.card-date,.card-title{
+    overflow:hidden;
+    position:absolute;
+}
+.card-img,.card-title{
+    left:0;
+    width:#{$card-size};
+}
+.card-img{
+    aspect-ratio:4/3;
+    height:#{$card-ratio};
+    top:0;
+}
+.card-date{
+    bottom:.5em;
+    display:inline-block;
+    height:2em;
+    line-height:2em;
+    margin:0;
+    padding:0 1em;
+    right:0;
+}
+.card-title{
+    bottom:.75em;
+    box-sizing:border-box;
+    margin-bottom:0;
+    padding:.5em 1em;
+    text-align:center;
+    vertical-align:middle;
+    @include one-line-txt;
+}
+
+.big-card{
+    box-sizing:border-box;
+    padding:0 0 1em;
+    margin:calc(#{$base-vertical-rythm} * 3) auto;
+    max-width:96%;
+    @include base-backplate;
+
+    & > h2{
+        display:inline-block;
+        font-size:1.8em;
+        padding:.5em 0 $base-vertical-rythm;
+        text-align:center;
+        width:100%;
+    }
+    & ul{
+        list-style-type:none;
+    }
+}

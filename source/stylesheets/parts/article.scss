@@ -1,0 +1,164 @@
+@import 'variables';
+.article-main{
+    margin:calc(#{$base-vertical-rythm} * 3) auto;
+    max-width:1600px;
+    padding-bottom:1em;
+    width:96vw;
+    @include base-backplate;
+
+    & .article-eyecatch{
+        margin:calc(#{$base-vertical-rythm}* 3) auto;
+        width:100%;
+    }
+
+    & > div{
+        margin:calc(#{$base-vertical-rythm} * 2) auto;
+        max-width:80%;
+    }
+
+    & p{
+        margin:$base-vertical-rythm auto;
+        max-width:calc(1em * 42);
+        padding:1vh .5vh;
+    }
+
+    & a{
+        &[href^="http"]:empty::before{
+            content:attr(href);
+        }
+        &[href^="http"][title]:empty::before{
+            content:attr(title);
+        }
+        &:hover,
+        &:focus{
+            border-bottom:1px solid #0a28ff;
+        }
+    }
+
+    & h3,
+    & h4,
+    & h5,
+    & h6{
+        font-size:1.4em;
+    }
+    & h2{
+        border:$border-width solid $black;
+        box-shadow:0 0 3vmin rgba(0,0,0,.1);
+    }
+    & h3{
+        border-bottom:$border-width dashed;
+        border-color:$black;
+        border-top:$border-width dashed;
+    }
+    & h4{
+        border-bottom:calc(.5em / 2) solid;
+        border-color:$black;
+        border-left:$border-width solid;
+    }
+    & h5{
+        border-left:$border-width solid $black;
+    }
+    & h6{
+        border-bottom:$border-width solid $black;
+    }
+
+    & ul,
+    & ol{
+        margin:$base-vertical-rythm auto;
+        max-width:80%;
+    }
+
+    & table{
+        border-collapse:collapse;
+        box-sizing:border-box;
+        margin:$base-vertical-rythm auto;
+        table-layout:fixed;
+        width:calc(100% - 16vmin);
+        & caption{
+            background-color:$white;
+            padding:1em;
+            text-align:center;
+        }
+        & tr{
+            & th,
+            & td{
+                border:.1em solid $white;
+                overflow:auto;
+                padding:1em;
+                text-align:center;
+            }
+            & th{
+                background-color:$white;
+            }
+            &:last-child{
+                border-left:none;
+            }
+        }
+        &:last-child{
+            border-bottom:none;
+        }
+    }
+
+    & img,
+    & a[href*=".png"],
+    & a[href*=".jpg"],
+    & a[href*=".jpeg"],
+    & a[href*=".gif"]{
+        display:block;
+        margin:$base-vertical-rythm auto;
+    }
+    & img{
+        height:auto;
+        text-align:center;
+        width:100%;
+    }
+
+    & pre,
+    & code{
+        box-sizing:border-box;
+        font-weight:bold;
+        margin:$base-vertical-rythm 0;
+        overflow:auto;
+        white-space:pre;
+        width:100%;
+    }
+    & code{
+        padding-left:4em;
+    }
+
+    & address,
+    & blockquote,
+    & q{
+        background-color:$light-gray;
+        box-sizing:border-box;
+        margin:$base-vertical-rythm 0;
+        width:100%;
+    }
+    & blockquote,
+    & q{
+        font-style:italic;
+        quotes:none;
+    }
+    & blockquote{
+        padding:1em 2em;
+        &[title]::after{
+            content:attr(title);
+        }
+        &[cite]::after{
+            content:attr(cite);
+        }
+        &[title][cite]::after{
+            content:attr(title)"\a" attr(cite);
+        }
+        &[title]::after,
+        &[cite]::after,
+        &[title][cite]::after{
+            border-top:1px solid $dark-gray;
+            display:block;
+            padding-top:1em;
+            text-align:right;
+            white-space:pre-wrap;
+            word-wrap:break-word;
+        }
+    }
+}
