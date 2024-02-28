@@ -1,0 +1,7 @@
+@charset "UTF-8";
+:root {
+  font-family: 'UD デジタル 教科書体 N-R', Meiryo, sans-serif;
+  font-feature-settings: 'pkna' 1;
+  scroll-behavior: smooth;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
