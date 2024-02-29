@@ -1,5 +1,6 @@
 @charset "UTF-8";
 :root {
+  color-scheme: light dark;
   font-family: 'UD デジタル 教科書体 N-R', Meiryo, sans-serif;
   font-feature-settings: 'pkna' 1;
   scroll-behavior: smooth;
@@ -110,34 +111,61 @@
   font-weight: bold; }
 
 .site-header {
-  color: #fff;
-  padding: 2vh 0;
+  color: light-dark(#333, #fff);
+  display: grid;
+  grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
+  margin: 2vh 0;
   text-align: center;
-  width: 100%; }
-  .site-header .copyright a, .site-header .copyright a:visited, .site-header .copyright a:active {
+  width: 96dvw; }
+  .site-header a, .site-header a:visited, .site-header a:active {
     color: #fff; }
 
-.index-nav {
-  box-sizing: border-box;
-  display: grid;
-  grid-template-columns: repeat(3, minmax(calc(27vmax / 2), 1fr));
-  margin: calc(2vh * 3) auto;
-  max-width: 94%;
-  padding: 1em 0;
-  text-align: center;
-  background-color: rgba(255, 255, 255, 0.25);
-  box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
-  .index-nav > a {
-    font-size: 1.6em;
-    font-weight: bold;
-    grid-row: 1 / 2; }
-  .index-nav .search-form-wrapper {
-    grid-column: 1 / 4;
-    grid-row: 2 / 3; }
-  .index-nav .mini-card {
-    grid-row: 3 / 4;
-    width: 100%; }
+.site-title {
+  grid-row: 1/2;
+  padding-top: 2vh; }
 
+.site-detail {
+  grid-row: 2/3; }
+
+.copyright {
+  grid-row: 3/4; }
+
+.search-form-wrapper {
+  grid-row: 4/5; }
+
+.site-nav {
+  display: grid;
+  grid-row: 5/6;
+  grid-template-columns: repeat(3, minmax(1px, 1fr)); }
+
+/*.index-nav{
+    box-sizing:border-box;
+    display:grid;
+    grid-template-columns:repeat(3, minmax(calc(27vmax / 2), 1fr));
+    margin:calc(2vh * 3) auto;
+    max-width:94%;
+    padding:1em 0;
+    text-align:center;
+    @include base-backplate;
+
+    & > a{
+        font:{
+            size:1.6em;
+            weight:bold;
+        }
+        grid-row:1 / 2;
+    }
+
+    & .search-form-wrapper{
+        grid-column:1 / 4;
+        grid-row:2 / 3;
+    }
+
+    & .mini-card{
+        grid-row:3 / 4;
+        width:100%;
+    }
+}*/
 .article-main {
   margin: calc(2vh * 3) auto;
   max-width: 1600px;
