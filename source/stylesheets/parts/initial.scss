@@ -1,6 +1,8 @@
 @import 'variables';
 
-:root {
+:root{
+    color-scheme:light dark;
+
     font-family: 'UD デジタル 教科書体 N-R', Meiryo, sans-serif;
     font-feature-settings: 'pkna' 1;
     scroll-behavior: smooth;

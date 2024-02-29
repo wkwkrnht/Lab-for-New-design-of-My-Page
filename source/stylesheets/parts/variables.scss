@@ -1,12 +1,3 @@
-$base-vertical-rythm:2vh;
-$border-width:.5em;
-$card-size:27vmax;
-$ga_alert_size:54em;
-$ga_alert_icon_size:2em;
-$info-literal-size:2em;
-$embed-max:720px;
-$embed-size:80vw;
-
 // Colors.
 $black:#333;
 $dark-gray:#eee;
@@ -16,7 +7,18 @@ $red:red;
 $right-blue:#3ff9dc;
 $blue:#03a9f4;
 $yellow:#eae3b4;
+$base-color:light-dark($white, $black);
+$highlight-color:light-dark($black,$white);
 
+// Sizes
+$base-vertical-rythm:2vh;
+$border-width:.5em;
+$card-size:27vmax;
+$ga_alert_size:54em;
+$ga_alert_icon_size:2em;
+$info-literal-size:2em;
+$embed-max:720px;
+$embed-size:80vw;
 @function calc-height-43($height){
     @return ($height / 100) * 75;
 }
@@ -24,20 +26,24 @@ $yellow:#eae3b4;
     @return ($height / 100) * 56.25;
 }
 
+// Border
 @mixin border-1px($color){
     border:1px solid $color;
 }
 
+
+// Specific txt
 @mixin one-line-txt{
     text-overflow:ellipsis;
     white-space:nowrap;
 }
 
+
+// Background
 @mixin base-backplate{
     background-color:rgba(255,255,255,.25);
     box-shadow:0 0 3vmin rgba(0,0,0,.1);
 }
-
 @mixin cutting-cardboared{
     $var1: 5px;
     background-color:#f4f4f4;

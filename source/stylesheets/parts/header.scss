@@ -1,19 +1,44 @@
 @import 'variables';
 
 .site-header{
-    color:$white;
-    padding:$base-vertical-rythm 0;
+    color:$highlight-color;
+    display:grid;
+    grid-template-rows:minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
+    margin:$base-vertical-rythm 0;
     text-align:center;
-    width:100%;
+    width:96dvw;
 
-    & .copyright a,
-    & .copyright a:visited,
-    & .copyright a:active{
+    & a,
+    & a:visited,
+    & a:active{
         color:$white;
     }
 }
 
-.index-nav{
+.site-title{
+    grid-row:1/2;
+    padding-top:$base-vertical-rythm;
+}
+
+.site-detail{
+    grid-row:2/3;
+}
+
+.copyright{
+    grid-row:3/4;
+}
+
+.search-form-wrapper{
+    grid-row:4/5;
+}
+
+.site-nav{
+    display:grid;
+    grid-row:5/6;
+    grid-template-columns:repeat(3, minmax(1px, 1fr));
+}
+
+/*.index-nav{
     box-sizing:border-box;
     display:grid;
     grid-template-columns:repeat(3, minmax(calc(#{$card-size} / 2), 1fr));
@@ -40,4 +65,4 @@
         grid-row:3 / 4;
         width:100%;
     }
-}
+}*/
