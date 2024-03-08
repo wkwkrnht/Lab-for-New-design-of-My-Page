@@ -1,103 +1,129 @@
-.article-main {
+.article-base {
   margin: calc(2vh * 3) auto;
   max-width: 1600px;
   padding-bottom: 1em;
-  width: 96vw;
+  width: 96dvw;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
-  .article-main .article-eyecatch {
-    margin: calc(2vh* 3) auto;
-    width: 100%; }
-  .article-main > div {
-    margin: calc(2vh * 2) auto;
-    max-width: 80%; }
-  .article-main p {
-    margin: 2vh auto;
-    max-width: calc(1em * 42);
-    padding: 1vh .5vh; }
-  .article-main a[href^="http"]:empty::before {
-    content: attr(href); }
-  .article-main a[href^="http"][title]:empty::before {
-    content: attr(title); }
-  .article-main a:hover, .article-main a:focus {
-    border-bottom: 1px solid #0a28ff; }
-  .article-main h3, .article-main h4, .article-main h5, .article-main h6 {
-    font-size: 1.4em; }
-  .article-main h2 {
-    border: 0.5em solid #333;
-    box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
-  .article-main h3 {
-    border-bottom: 0.5em dashed;
-    border-color: #333;
-    border-top: 0.5em dashed; }
-  .article-main h4 {
-    border-bottom: calc(.5em / 2) solid;
-    border-color: #333;
-    border-left: 0.5em solid; }
-  .article-main h5 {
-    border-left: 0.5em solid #333; }
-  .article-main h6 {
-    border-bottom: 0.5em solid #333; }
-  .article-main ul, .article-main ol {
-    margin: 2vh auto;
-    max-width: 80%; }
-  .article-main table {
-    border-collapse: collapse;
-    box-sizing: border-box;
-    margin: 2vh auto;
-    table-layout: fixed;
-    width: calc(100% - 16vmin); }
-    .article-main table caption {
-      background-color: #fff;
-      padding: 1em;
-      text-align: center; }
-    .article-main table tr th, .article-main table tr td {
-      border: 0.1em solid #fff;
-      overflow: auto;
-      padding: 1em;
-      text-align: center; }
-    .article-main table tr th {
-      background-color: #fff; }
-    .article-main table tr:last-child {
-      border-left: none; }
-    .article-main table:last-child {
-      border-bottom: none; }
-  .article-main img, .article-main a[href*=".png"], .article-main a[href*=".jpg"], .article-main a[href*=".jpeg"], .article-main a[href*=".gif"] {
-    display: block;
-    margin: 2vh auto; }
-  .article-main img {
-    height: auto;
-    text-align: center;
-    width: 100%; }
-  .article-main pre, .article-main code {
-    box-sizing: border-box;
-    font-weight: bold;
-    margin: 2vh 0;
+
+.article-main .article-eyecatch {
+  margin: calc(2vh* 3) auto;
+  width: 100%; }
+
+.article-main > div {
+  margin: calc(2vh * 2) auto;
+  max-width: 80%; }
+
+.article-main p {
+  margin: 2vh auto;
+  max-width: calc(1em * 42);
+  padding: 1vh .5vh; }
+
+.article-main a[href^="http"]:empty::before {
+  content: attr(href); }
+
+.article-main a[href^="http"][title]:empty::before {
+  content: attr(title); }
+
+.article-main a:hover, .article-main a:focus {
+  border-bottom: 1px solid #0a28ff; }
+
+.article-main h2::before, .article-main h3::before, .article-main h4::before, .article-main h5::before, .article-main h6::before {
+  content: c1 "." c2 "." c3 "." c4 "." c5;
+  display: inline;
+  font-weight: bold;
+  padding-right: 2em; }
+
+.article-main h3, .article-main h4, .article-main h5, .article-main h6 {
+  font-size: 1.4em; }
+
+.article-main h2 {
+  counter-increment: c1;
+  counter-reset: c2 c3 c4 c5; }
+
+.article-main h3 {
+  counter-increment: c2;
+  counter-reset: c3 c4 c5; }
+
+.article-main h4 {
+  counter-increment: c3;
+  counter-reset: c4 c5; }
+
+.article-main h5 {
+  counter-increment: c4;
+  counter-reset: c5; }
+
+.article-main h6 {
+  counter-increment: c5; }
+
+.article-main ul, .article-main ol {
+  margin: 2vh auto;
+  max-width: 80%; }
+
+.article-main table {
+  border-collapse: collapse;
+  box-sizing: border-box;
+  margin: 2vh auto;
+  table-layout: fixed;
+  width: calc(100% - 16vmin); }
+  .article-main table caption {
+    background-color: #fff;
+    padding: 1em;
+    text-align: center; }
+  .article-main table tr th, .article-main table tr td {
+    border: 0.1em solid #fff;
     overflow: auto;
-    white-space: pre;
-    width: 100%; }
-  .article-main code {
-    padding-left: 4em; }
-  .article-main address, .article-main blockquote, .article-main q {
-    background-color: #bbb;
-    box-sizing: border-box;
-    margin: 2vh 0;
-    width: 100%; }
-  .article-main blockquote, .article-main q {
-    font-style: italic;
-    quotes: none; }
-  .article-main blockquote {
-    padding: 1em 2em; }
-    .article-main blockquote[title]::after {
-      content: attr(title); }
-    .article-main blockquote[cite]::after {
-      content: attr(cite); }
-    .article-main blockquote[title][cite]::after {
-      content: attr(title) "\a" attr(cite); }
-    .article-main blockquote[title]::after, .article-main blockquote[cite]::after, .article-main blockquote[title][cite]::after {
-      border-top: 1px solid #eee;
-      display: block;
-      padding-top: 1em;
-      text-align: right;
-      white-space: pre-wrap;
-      word-wrap: break-word; }
+    padding: 1em;
+    text-align: center; }
+  .article-main table tr th {
+    background-color: #fff; }
+  .article-main table tr:last-child {
+    border-left: none; }
+  .article-main table:last-child {
+    border-bottom: none; }
+
+.article-main img, .article-main a[href*=".png"], .article-main a[href*=".jpg"], .article-main a[href*=".jpeg"], .article-main a[href*=".gif"] {
+  display: block;
+  margin: 2vh auto; }
+
+.article-main img {
+  height: auto;
+  text-align: center;
+  width: 100%; }
+
+.article-main pre, .article-main code {
+  box-sizing: border-box;
+  font-weight: bold;
+  margin: 2vh 0;
+  overflow: auto;
+  white-space: pre;
+  width: 100%; }
+
+.article-main code {
+  padding-left: 4em; }
+
+.article-main address, .article-main blockquote, .article-main q {
+  background-color: #bbb;
+  box-sizing: border-box;
+  margin: 2vh 0;
+  width: 100%; }
+
+.article-main blockquote, .article-main q {
+  font-style: italic;
+  quotes: none; }
+
+.article-main blockquote {
+  padding: 1em 2em; }
+  .article-main blockquote[title]::after {
+    content: attr(title); }
+  .article-main blockquote[cite]::after {
+    content: attr(cite); }
+  .article-main blockquote[title][cite]::after {
+    content: attr(title) "\a" attr(cite); }
+  .article-main blockquote[title]::after, .article-main blockquote[cite]::after, .article-main blockquote[title][cite]::after {
+    border-top: 1px solid #eee;
+    display: block;
+    padding-top: 1em;
+    text-align: right;
+    white-space: pre-wrap;
+    word-wrap: break-word; }
