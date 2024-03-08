@@ -223,9 +223,12 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   color: #333;
   display: grid;
   grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
-  margin: 2vh 0;
   text-align: center;
-  width: 96dvw; }
+  margin: calc(2vh * $times) auto;
+  max-width: 1600px;
+  width: 96dvw;
+  background-color: white;
+  box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
   .site-header a, .site-header a:visited, .site-header a:active {
     color: currentColor; }
 
@@ -276,9 +279,9 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
     }
 }*/
 .article-base {
-  margin: calc(2vh * 3) auto;
-  max-width: 1600px;
   padding-bottom: 1em;
+  margin: calc(2vh * $times) auto;
+  max-width: 1600px;
   width: 96dvw;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
@@ -306,7 +309,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   border-bottom: 1px solid #0a28ff; }
 
 .article-main h2::before, .article-main h3::before, .article-main h4::before, .article-main h5::before, .article-main h6::before {
-  content: counter(c1) "." counter(c2) "." counter(c3) "." counter(c4) "." counter(c5);
+  content: counter(c2) "." counter(c3) "." counter(c4) "." counter(c5);
   display: inline;
   font-size: 1.7em;
   font-weight: bold;
@@ -315,6 +318,10 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 .article-main h3, .article-main h4, .article-main h5, .article-main h6 {
   font-size: 1.4em;
   padding-bottom: 1em; }
+
+.article-main h2 {
+  counter-increment: c0;
+  counter-reset: c1 c2 c3 c4 c5; }
 
 .article-main h2 {
   counter-increment: c1;
