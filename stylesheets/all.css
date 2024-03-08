@@ -130,7 +130,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   overflow: hidden;
   position: relative;
   width: 27vmax;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
 
 .card-img, .card-date, .card-title {
@@ -170,7 +170,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   padding: 0 0 1em;
   margin: calc(2vh * 3) auto;
   max-width: 96%;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
   .big-card > h2 {
     display: inline-block;
@@ -255,7 +255,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
     max-width:94%;
     padding:1em 0;
     text-align:center;
-    @include base-backplate;
+    @include shadow;
 
     & > a{
         font:{
@@ -280,7 +280,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   max-width: 1600px;
   padding-bottom: 1em;
   width: 96vw;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
   .article-main .article-eyecatch {
     margin: calc(2vh* 3) auto;
@@ -288,7 +288,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   .article-main > div {
     margin: calc(2vh * 2) auto;
     max-width: 80%; }
-  .article-main p:where(&) {
+  .article-main p {
     margin: 2vh auto;
     max-width: calc(1em * 42);
     padding: 1vh .5vh; }

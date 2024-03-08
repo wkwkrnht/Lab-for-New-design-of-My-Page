@@ -12,7 +12,7 @@
   overflow: hidden;
   position: relative;
   width: 27vmax;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
 
 .card-img, .card-date, .card-title {
@@ -52,7 +52,7 @@
   padding: 0 0 1em;
   margin: calc(2vh * 3) auto;
   max-width: 96%;
-  background-color: rgba(255, 255, 255, 0.25);
+  background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
   .big-card > h2 {
     display: inline-block;
