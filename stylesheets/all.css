@@ -227,7 +227,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   text-align: center;
   width: 96dvw; }
   .site-header a, .site-header a:visited, .site-header a:active {
-    color: #fff; }
+    color: currentColor; }
 
 .site-title {
   grid-row: 1/2;
