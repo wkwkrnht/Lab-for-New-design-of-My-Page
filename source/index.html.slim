@@ -1,0 +1,6 @@
+main.card-list
+    - 30.times do
+        = link_to '/', :class=>'mini-card', :title=>title, :tabindex=>'0' do
+            = image_tag '/images/no-img.png', :alt=>'eyecatch', :class=>'card-img', :loading=>'lazy'
+            time.card-date 2024-11-11
+            h2.card-title テストタイトル

@@ -7,8 +7,10 @@ $red:red;
 $right-blue:#3ff9dc;
 $blue:#03a9f4;
 $yellow:#eae3b4;
-$base-color:light-dark($white, $black);
-$highlight-color:light-dark($black,$white);
+//$base-color:light-dark($white, $black);
+//$highlight-color:light-dark($black,$white);
+$base-color:#fff;
+$highlight-color:#333;
 
 // Sizes
 $base-vertical-rythm:2vh;
