@@ -29,7 +29,7 @@
   border-bottom: 1px solid #0a28ff; }
 
 .article-main h2::before, .article-main h3::before, .article-main h4::before, .article-main h5::before, .article-main h6::before {
-  content: c1 "." c2 "." c3 "." c4 "." c5;
+  content: counter(c1) "." counter(c2) "." counter(c3) "." counter(c4) "." counter(c5);
   display: inline;
   font-weight: bold;
   padding-right: 2em; }
