@@ -31,6 +31,7 @@
 .article-main h2::before, .article-main h3::before, .article-main h4::before, .article-main h5::before, .article-main h6::before {
   content: counter(c1) "." counter(c2) "." counter(c3) "." counter(c4) "." counter(c5);
   display: inline;
+  font-size: 1.7em;
   font-weight: bold;
   padding-right: 2em; }
 
