@@ -48,6 +48,7 @@
     & h6::before{
         content:counter(c1) "." counter(c2) "." counter(c3) "." counter(c4) "." counter(c5);
         display:inline;
+        font-size:1.7em;
         font-weight:bold;
         padding-right:2em;
     }
