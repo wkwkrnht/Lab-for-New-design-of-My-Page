@@ -42,9 +42,11 @@ $embed-size:80vw;
 
 
 // Background
-@mixin base-backplate{
-    background-color:rgba(255,255,255,.25);
+@mixin shadow{
     box-shadow:0 0 3vmin rgba(0,0,0,.1);
+}
+@mixin background($percent:0;){
+    background-color:lighten($base-color, $percent);
 }
 @mixin cutting-cardboared{
     $var1: 5px;
