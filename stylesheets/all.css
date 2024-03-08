@@ -312,7 +312,8 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   padding-right: 2em; }
 
 .article-main h3, .article-main h4, .article-main h5, .article-main h6 {
-  font-size: 1.4em; }
+  font-size: 1.4em;
+  padding-bottom: 1em; }
 
 .article-main h2 {
   counter-increment: c1;
