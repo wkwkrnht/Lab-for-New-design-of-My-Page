@@ -16,7 +16,7 @@
         max-width:80%;
     }
 
-    & p{
+    p:where(&){
         margin:$base-vertical-rythm auto;
         max-width:calc(1em * 42);
         padding:1vh .5vh;
