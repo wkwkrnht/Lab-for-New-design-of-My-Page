@@ -47,12 +47,12 @@ article.article-base
             blockquote Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa <strong>strong</strong>. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In <em>em</em> enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam <a class="external ext" href="#">link</a>dictum felis eu pede mollis pretium.
     footer.article-footer
         = partial 'partials/share-button'
-        section class='big-card related-articles'
-            h2 最新記事
-            ul.card-list
-                - 3.times do
-                    li
-                        a.mini-card href='/' title='記事タイトル' tabindex='0'
-                            img.card-img src='/images/no-img.png' alt='アイキャッチ' loading='lazy'
-                            time.card-date 1970-1-1
-                            h3.card-title 記事タイトル
+section class='big-card related-articles'
+    h2 最新記事
+        ul.card-list
+            - 3.times do
+                li
+                    a.mini-card href='/' title='記事タイトル' tabindex='0'
+                        img.card-img src='/images/no-img.png' alt='アイキャッチ' loading='lazy'
+                        time.card-date 1970-1-1
+                        h3.card-title 記事タイトル

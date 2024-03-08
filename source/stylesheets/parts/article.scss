@@ -1,11 +1,16 @@
 @import 'variables';
-.article-main{
+
+.article-base{
     margin:calc(#{$base-vertical-rythm} * 3) auto;
     max-width:1600px;
     padding-bottom:1em;
-    width:96vw;
+    width:96dvw;
     @include background(15%);
     @include shadow;
+}
+
+.article-main{
+    //
 
     & .article-eyecatch{
         margin:calc(#{$base-vertical-rythm}* 3) auto;
@@ -36,6 +41,16 @@
         }
     }
 
+    & h2::before,
+    & h3::before,
+    & h4::before,
+    & h5::before,
+    & h6::before{
+        content:c1 "." c2 "." c3 "." c4 "." c5;
+        display:inline;
+        font-weight:bold;
+        padding-right:2em;
+    }
     & h3,
     & h4,
     & h5,
@@ -43,24 +58,23 @@
         font-size:1.4em;
     }
     & h2{
-        border:$border-width solid $black;
-        box-shadow:0 0 3vmin rgba(0,0,0,.1);
+        counter-increment:c1;
+        counter-reset:c2 c3 c4 c5;
     }
     & h3{
-        border-bottom:$border-width dashed;
-        border-color:$black;
-        border-top:$border-width dashed;
+        counter-increment:c2;
+        counter-reset:c3 c4 c5;
     }
     & h4{
-        border-bottom:calc(.5em / 2) solid;
-        border-color:$black;
-        border-left:$border-width solid;
+        counter-increment:c3;
+        counter-reset:c4 c5;
     }
     & h5{
-        border-left:$border-width solid $black;
+        counter-increment:c4;
+        counter-reset:c5;
     }
     & h6{
-        border-bottom:$border-width solid $black;
+        counter-increment:c5;
     }
 
     & ul,
