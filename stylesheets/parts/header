@@ -1,5 +1,5 @@
 .site-header {
-  color: light-dark(#333, #fff);
+  color: #333;
   display: grid;
   grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
   margin: 2vh 0;

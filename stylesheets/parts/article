@@ -11,7 +11,7 @@
   .article-main > div {
     margin: calc(2vh * 2) auto;
     max-width: 80%; }
-  .article-main p {
+  .article-main p:where(&) {
     margin: 2vh auto;
     max-width: calc(1em * 42);
     padding: 1vh .5vh; }
