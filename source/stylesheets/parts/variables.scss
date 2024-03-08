@@ -48,8 +48,15 @@ $embed-size:80vw;
 @mixin background($percent:0){
     background-color:lighten($base-color, $percent);
 }
+@mixin max-width{
+    max-width:1600px;
+    width:96dvw;
+}
+@mixin vertical-margin($times:1){
+    margin:calc(#{$base-vertical-rythm} * $times) auto;
+}
 @mixin cutting-cardboared{
-    $var1: 5px;
+    $var1:5px;
     background-color:#f4f4f4;
     border-bottom:1px dashed #ccc;
     border-top:1px dashed #ccc;

@@ -4,9 +4,11 @@
     color:$highlight-color;
     display:grid;
     grid-template-rows:minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
-    margin:$base-vertical-rythm 0;
     text-align:center;
-    width:96dvw;
+    @include vertical-margin(1);
+    @include max-width;
+    @include background(15%);
+    @include shadow;
 
     & a,
     & a:visited,

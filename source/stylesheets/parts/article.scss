@@ -1,10 +1,9 @@
 @import 'variables';
 
 .article-base{
-    margin:calc(#{$base-vertical-rythm} * 3) auto;
-    max-width:1600px;
     padding-bottom:1em;
-    width:96dvw;
+    @include vertical-margin(3);
+    @include max-width;
     @include background(15%);
     @include shadow;
 }
@@ -46,7 +45,7 @@
     & h4::before,
     & h5::before,
     & h6::before{
-        content:counter(c1) "." counter(c2) "." counter(c3) "." counter(c4) "." counter(c5);
+        content:counter(c2) "." counter(c3) "." counter(c4) "." counter(c5);
         display:inline;
         font-size:1.7em;
         font-weight:bold;
@@ -58,6 +57,10 @@
     & h6{
         font-size:1.4em;
         padding-bottom:1em;
+    }
+    & h2 {
+        counter-increment:c0;
+        counter-reset:c1 c2 c3 c4 c5;
     }
     & h2{
         counter-increment:c1;
