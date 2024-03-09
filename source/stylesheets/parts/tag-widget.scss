@@ -5,10 +5,9 @@
     & > *{
         display:inline-block;
     }
+    
     & a{
-        background-color:$white;
         border-radius:1em;
-        color:$black;
         display:inline-block;
         font-size:1.1em;
         height:1.6em;
@@ -17,12 +16,17 @@
         overflow:hidden;
         padding:0 1em;
         text-decoration:none;
-        @include border-1px($color: $blue);
+        transition:500ms linear 50ms;
+        @include border-1px($white);
         @include one-line-txt;
-        &:hover{
-            background-color:$blue;
-            border-color:$white;
+        
+        &,
+        &:visited,
+        &:active{
             color:$white;
         }
+
+        &:hover{
+            transform:scale(1.2);
     }
 }
