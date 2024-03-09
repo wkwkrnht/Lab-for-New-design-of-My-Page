@@ -12,12 +12,12 @@
     //
 
     & .article-eyecatch{
-        margin:calc(#{$base-vertical-rythm}* 3) auto;
+        @include vertical-margin(3);
         width:100%;
     }
 
     & > div{
-        margin:calc(#{$base-vertical-rythm} * 2) auto;
+        @include vertical-margin(2);
         max-width:80%;
     }
 
@@ -84,14 +84,14 @@
 
     & ul,
     & ol{
-        margin:$base-vertical-rythm auto;
+        @include vertical-margin(1);
         max-width:80%;
     }
 
     & table{
         border-collapse:collapse;
         box-sizing:border-box;
-        margin:$base-vertical-rythm auto;
+        @include vertical-margin(1);
         table-layout:fixed;
         width:calc(100% - 16vmin);
         & caption{
@@ -125,7 +125,7 @@
     & a[href*=".jpeg"],
     & a[href*=".gif"]{
         display:block;
-        margin:$base-vertical-rythm auto;
+        @include vertical-margin(1);
     }
     & img{
         height:auto;

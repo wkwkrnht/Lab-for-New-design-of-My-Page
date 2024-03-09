@@ -11,11 +11,10 @@ $card-ratio:calc(#{$card-size} / 4 * 3);
 
 .mini-card{
     display:block;
-    height:#{$card-size};
-    margin:calc(#{$base-vertical-rythm} * 2) auto;
+    @include vertical-margin(2);
     overflow:hidden;
     position:relative;
-    width:#{$card-size};
+    @include square($card-size);
     @include background(30%);
     @include shadow;
 }
@@ -54,7 +53,7 @@ $card-ratio:calc(#{$card-size} / 4 * 3);
 .big-card{
     box-sizing:border-box;
     padding:0 0 1em;
-    margin:calc(#{$base-vertical-rythm} * 3) auto;
+    @include vertical-margin(3);
     max-width:96%;
     @include background(0);
     @include shadow;

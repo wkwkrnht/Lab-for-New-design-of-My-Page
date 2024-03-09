@@ -28,6 +28,12 @@ $embed-size:80vw;
     @return ($height / 100) * 56.25;
 }
 
+//square
+@mixin square($size:0){
+    height:$size;
+    width:$size;
+}
+
 // Border
 @mixin border-1px($color){
     border:1px solid $color;
