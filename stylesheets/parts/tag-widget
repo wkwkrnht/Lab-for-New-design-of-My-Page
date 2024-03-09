@@ -3,9 +3,7 @@
   .tag-cloud > * {
     display: inline-block; }
   .tag-cloud a {
-    background-color: #fff;
     border-radius: 1em;
-    color: #333;
     display: inline-block;
     font-size: 1.1em;
     height: 1.6em;
@@ -14,10 +12,11 @@
     overflow: hidden;
     padding: 0 1em;
     text-decoration: none;
-    border: 1px solid #03a9f4;
+    transition: 500ms linear 50ms;
+    border: 1px solid #fff;
     text-overflow: ellipsis;
     white-space: nowrap; }
-    .tag-cloud a:hover {
-      background-color: #03a9f4;
-      border-color: #fff;
+    .tag-cloud a, .tag-cloud a:visited, .tag-cloud a:active {
       color: #fff; }
+    .tag-cloud a:hover {
+      transform: scale(1.2); }
