@@ -124,7 +124,7 @@ Extra by wkwkrnht
 :root {
   font-family: 'BIZ UDPGothic', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
   font-feature-settings: 'pkna' 1;
-  line-height: 1.6;
+  line-height: 1.8;
   scroll-behavior: smooth;
   text-overflow: ellipsis;
   -webkit-font-smoothing: antialiased; }
@@ -236,6 +236,7 @@ Extra by wkwkrnht
   display: grid;
   grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
   font-size: 1.1em;
+  font-weight: bold;
   margin-bottom: 2dvh;
   text-align: center;
   background-color: #f57c00;
@@ -244,8 +245,7 @@ Extra by wkwkrnht
   width: 100dvw; }
   .site-header a, .site-header a:visited, .site-header a:active {
     color: #fff;
-    font-weight: bold;
-    text-decoration-color: #3ff9dc; }
+    text-decoration-color: #fff; }
 
 .site-title {
   grid-row: 1/2;
@@ -265,34 +265,6 @@ Extra by wkwkrnht
   grid-row: 5/6;
   grid-template-columns: repeat(3, minmax(1px, 1fr)); }
 
-/*.index-nav{
-    box-sizing:border-box;
-    display:grid;
-    grid-template-columns:repeat(3, minmax(calc(27vmax / 2), 1fr));
-    margin:calc(2dvh * 3) auto;
-    max-width:94%;
-    padding:1em 0;
-    text-align:center;
-    @include shadow;
-
-    & > a{
-        font:{
-            size:1.6em;
-            weight:bold;
-        }
-        grid-row:1 / 2;
-    }
-
-    & .search-form-wrapper{
-        grid-column:1 / 4;
-        grid-row:2 / 3;
-    }
-
-    & .mini-card{
-        grid-row:3 / 4;
-        width:100%;
-    }
-}*/
 .article-base {
   padding-bottom: 1em;
   margin: 6dvh auto;
