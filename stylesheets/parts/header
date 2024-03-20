@@ -2,11 +2,11 @@
   color: #333;
   display: grid;
   grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
-  margin: 2vh 0;
+  margin-bottom: 2vh;
   text-align: center;
-  background-color: #03a9f4;
-  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
-  padding-bottom: 4vh;
+  background-color: #f57c00;
+  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
+  padding-bottom: 6vh;
   width: 100dvw; }
   .site-header a, .site-header a:visited, .site-header a:active {
     color: currentColor; }
