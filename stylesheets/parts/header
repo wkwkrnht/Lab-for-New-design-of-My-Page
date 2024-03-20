@@ -2,6 +2,7 @@
   color: #333;
   display: grid;
   grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
+  font-size: 1.1em;
   margin-bottom: 2vh;
   text-align: center;
   background-color: #f57c00;

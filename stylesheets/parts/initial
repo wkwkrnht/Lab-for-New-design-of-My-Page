@@ -1,10 +1,3 @@
-:root {
-  font-family: 'BIZ UDPGothic', 'Helvetica Neue', Arial,'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
-  font-feature-settings: 'pkna' 1;
-  scroll-behavior: smooth;
-  text-overflow: ellipsis;
-  -webkit-font-smoothing: antialiased; }
-
 /*
 # reset.css A style reset that embraces modern CSS features to give you a better base to start off with.
 
@@ -115,3 +108,16 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   position: absolute !important;
   white-space: nowrap !important;
   border: 0 !important; }
+
+/*
+
+Extra by wkwkrnht
+
+*/
+:root {
+  font-family: 'BIZ UDPGothic', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
+  font-feature-settings: 'pkna' 1;
+  line-height: 1.4;
+  scroll-behavior: smooth;
+  text-overflow: ellipsis;
+  -webkit-font-smoothing: antialiased; }
