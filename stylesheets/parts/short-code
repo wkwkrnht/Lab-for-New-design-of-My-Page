@@ -1,13 +1,13 @@
 #markdown-toc {
   border: 0.1em solid #fff;
-  margin: calc(2vh * 2) auto;
+  margin: calc(2dvh * 2) auto;
   width: 90%; }
 
 .toc-title {
   max-width: 80%; }
 
 .embed-responsive {
-  margin: 2vh auto;
+  margin: 2dvh auto;
   width: 80%; }
 
 .embed-4x3 {
@@ -47,7 +47,7 @@
   width: 2em; }
 
 .search-form {
-  margin: 2vh auto; }
+  margin: 2dvh auto; }
   .search-form > * {
     display: inline-block;
     height: 2em;

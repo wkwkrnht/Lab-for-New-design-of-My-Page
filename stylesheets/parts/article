@@ -1,21 +1,21 @@
 .article-base {
   padding-bottom: 1em;
-  margin: 6vh auto;
+  margin: 6dvh auto;
   max-width: 1600px;
   width: 96dvw;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
 
 .article-main .article-eyecatch {
-  margin: 6vh auto;
+  margin: 6dvh auto;
   width: 100%; }
 
 .article-main > div {
-  margin: 4vh auto;
+  margin: 4dvh auto;
   max-width: 80%; }
 
 .article-main p {
-  margin: 2vh auto;
+  margin: 2dvh auto;
   max-width: calc(1em * 42);
   padding: 1vh .5vh; }
 
@@ -63,13 +63,13 @@
   counter-increment: c5; }
 
 .article-main ul, .article-main ol {
-  margin: 2vh auto;
+  margin: 2dvh auto;
   max-width: 80%; }
 
 .article-main table {
   border-collapse: collapse;
   box-sizing: border-box;
-  margin: 2vh auto;
+  margin: 2dvh auto;
   table-layout: fixed;
   width: calc(100% - 16vmin); }
   .article-main table caption {
@@ -90,7 +90,7 @@
 
 .article-main img, .article-main a[href*=".png"], .article-main a[href*=".jpg"], .article-main a[href*=".jpeg"], .article-main a[href*=".gif"] {
   display: block;
-  margin: 2vh auto; }
+  margin: 2dvh auto; }
 
 .article-main img {
   height: auto;
@@ -100,7 +100,7 @@
 .article-main pre, .article-main code {
   box-sizing: border-box;
   font-weight: bold;
-  margin: 2vh 0;
+  margin: 2dvh 0;
   overflow: auto;
   white-space: pre;
   width: 100%; }
@@ -111,7 +111,7 @@
 .article-main address, .article-main blockquote, .article-main q {
   background-color: #bbb;
   box-sizing: border-box;
-  margin: 2vh 0;
+  margin: 2dvh 0;
   width: 100%; }
 
 .article-main blockquote, .article-main q {

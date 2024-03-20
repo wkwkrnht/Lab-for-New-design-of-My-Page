@@ -117,7 +117,7 @@ Extra by wkwkrnht
 :root {
   font-family: 'BIZ UDPGothic', 'Helvetica Neue', Arial, 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', Meiryo, sans-serif;
   font-feature-settings: 'pkna' 1;
-  line-height: 1.4;
+  line-height: 1.6;
   scroll-behavior: smooth;
   text-overflow: ellipsis;
   -webkit-font-smoothing: antialiased; }
@@ -131,7 +131,7 @@ Extra by wkwkrnht
 
 .mini-card {
   display: block;
-  margin: 4vh auto;
+  margin: 4dvh auto;
   overflow: hidden;
   position: relative;
   height: 27vmax;
@@ -174,14 +174,14 @@ Extra by wkwkrnht
 .big-card {
   box-sizing: border-box;
   padding: 0 0 1em;
-  margin: 6vh auto;
+  margin: 6dvh auto;
   max-width: 96%;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
   .big-card > h2 {
     display: inline-block;
     font-size: 1.8em;
-    padding: 0.5em 0 2vh;
+    padding: 0.5em 0 2dvh;
     text-align: center;
     width: 100%; }
   .big-card ul {
@@ -229,18 +229,20 @@ Extra by wkwkrnht
   display: grid;
   grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
   font-size: 1.1em;
-  margin-bottom: 2vh;
+  margin-bottom: 2dvh;
   text-align: center;
   background-color: #f57c00;
-  clip-path: polygon(0 0, 100% 0, 100% 70%, 0 100%);
-  padding-bottom: 6vh;
+  clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%);
+  padding-bottom: 8dvh;
   width: 100dvw; }
   .site-header a, .site-header a:visited, .site-header a:active {
-    color: currentColor; }
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none; }
 
 .site-title {
   grid-row: 1/2;
-  padding-top: 2vh; }
+  padding-top: 2dvh; }
 
 .site-detail {
   grid-row: 2/3; }
@@ -260,7 +262,7 @@ Extra by wkwkrnht
     box-sizing:border-box;
     display:grid;
     grid-template-columns:repeat(3, minmax(calc(27vmax / 2), 1fr));
-    margin:calc(2vh * 3) auto;
+    margin:calc(2dvh * 3) auto;
     max-width:94%;
     padding:1em 0;
     text-align:center;
@@ -286,22 +288,22 @@ Extra by wkwkrnht
 }*/
 .article-base {
   padding-bottom: 1em;
-  margin: 6vh auto;
+  margin: 6dvh auto;
   max-width: 1600px;
   width: 96dvw;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
 
 .article-main .article-eyecatch {
-  margin: 6vh auto;
+  margin: 6dvh auto;
   width: 100%; }
 
 .article-main > div {
-  margin: 4vh auto;
+  margin: 4dvh auto;
   max-width: 80%; }
 
 .article-main p {
-  margin: 2vh auto;
+  margin: 2dvh auto;
   max-width: calc(1em * 42);
   padding: 1vh .5vh; }
 
@@ -349,13 +351,13 @@ Extra by wkwkrnht
   counter-increment: c5; }
 
 .article-main ul, .article-main ol {
-  margin: 2vh auto;
+  margin: 2dvh auto;
   max-width: 80%; }
 
 .article-main table {
   border-collapse: collapse;
   box-sizing: border-box;
-  margin: 2vh auto;
+  margin: 2dvh auto;
   table-layout: fixed;
   width: calc(100% - 16vmin); }
   .article-main table caption {
@@ -376,7 +378,7 @@ Extra by wkwkrnht
 
 .article-main img, .article-main a[href*=".png"], .article-main a[href*=".jpg"], .article-main a[href*=".jpeg"], .article-main a[href*=".gif"] {
   display: block;
-  margin: 2vh auto; }
+  margin: 2dvh auto; }
 
 .article-main img {
   height: auto;
@@ -386,7 +388,7 @@ Extra by wkwkrnht
 .article-main pre, .article-main code {
   box-sizing: border-box;
   font-weight: bold;
-  margin: 2vh 0;
+  margin: 2dvh 0;
   overflow: auto;
   white-space: pre;
   width: 100%; }
@@ -397,7 +399,7 @@ Extra by wkwkrnht
 .article-main address, .article-main blockquote, .article-main q {
   background-color: #bbb;
   box-sizing: border-box;
-  margin: 2vh 0;
+  margin: 2dvh 0;
   width: 100%; }
 
 .article-main blockquote, .article-main q {

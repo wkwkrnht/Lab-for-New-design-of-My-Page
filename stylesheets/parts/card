@@ -7,7 +7,7 @@
 
 .mini-card {
   display: block;
-  margin: 4vh auto;
+  margin: 4dvh auto;
   overflow: hidden;
   position: relative;
   height: 27vmax;
@@ -50,14 +50,14 @@
 .big-card {
   box-sizing: border-box;
   padding: 0 0 1em;
-  margin: 6vh auto;
+  margin: 6dvh auto;
   max-width: 96%;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
   .big-card > h2 {
     display: inline-block;
     font-size: 1.8em;
-    padding: 0.5em 0 2vh;
+    padding: 0.5em 0 2dvh;
     text-align: center;
     width: 100%; }
   .big-card ul {
