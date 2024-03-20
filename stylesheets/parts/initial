@@ -65,8 +65,15 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
   cursor: not-allowed; }
 
 :where(a) {
-  color: inherit;
+  color: #3ff9dc;
+  text-decoration-color: linear-gradient(to left, transparent, 70%, #f57c00);
+  text-decoration-line: none;
+  text-decoration-thickness: 40%;
   text-underline-offset: .2ex; }
+
+:where(a):hover {
+  text-decoration-line: underline;
+  transition: text-decoration-line 5s ease-in-out; }
 
 :where(ul, ol) {
   list-style: none; }
