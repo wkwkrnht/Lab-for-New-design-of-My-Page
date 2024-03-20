@@ -4,11 +4,9 @@
     color:$highlight-color;
     display:grid;
     grid-template-rows:minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
+    margin: calc-Length-by-base-vertical-rythm($times: 1) 0;
     text-align:center;
-    @include vertical-margin(1);
-    @include max-width;
-    @include background(15%);
-    @include shadow;
+    @include triangele-sepalator($blue);
 
     & a,
     & a:visited,

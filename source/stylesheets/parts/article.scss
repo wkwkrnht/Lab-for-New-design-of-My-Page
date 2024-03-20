@@ -137,7 +137,7 @@
     & code{
         box-sizing:border-box;
         font-weight:bold;
-        margin:$base-vertical-rythm 0;
+        margin:calc-Length-by-base-vertical-rythm($times: 1) 0;
         overflow:auto;
         white-space:pre;
         width:100%;
@@ -151,7 +151,7 @@
     & q{
         background-color:$light-gray;
         box-sizing:border-box;
-        margin:$base-vertical-rythm 0;
+        margin:calc-Length-by-base-vertical-rythm($times: 1) 0;
         width:100%;
     }
     & blockquote,

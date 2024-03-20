@@ -28,6 +28,11 @@ $embed-size:80vw;
     @return ($height / 100) * 56.25;
 }
 
+// Length
+@function calc-Length-by-base-vertical-rythm($times:1){
+    @return ($base-vertical-rythm * $times);
+}
+
 //square
 @mixin square($size:0){
     height:$size;
@@ -46,6 +51,14 @@ $embed-size:80vw;
     white-space:nowrap;
 }
 
+// Make a triangle to sepalate areas
+@mixin triangele-sepalator($color:transparent){
+    background-color:$color;
+    clip-path:polygon(0 0, 100% 0, 100% 50%, 0 100%);
+    padding-bottom:calc-Length-by-base-vertical-rythm($times: 2);
+    width:100dvw;
+}
+
 
 // Background
 @mixin shadow{
@@ -59,7 +72,7 @@ $embed-size:80vw;
     width:96dvw;
 }
 @mixin vertical-margin($times:1){
-    margin:calc(#{$base-vertical-rythm} * $times) auto;
+    margin:calc-Length-by-base-vertical-rythm($times: $times) auto;
 }
 @mixin cutting-cardboared{
     $var1:5px;
