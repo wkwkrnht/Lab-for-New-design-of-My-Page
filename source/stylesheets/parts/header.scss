@@ -5,6 +5,7 @@
     display:grid;
     grid-template-rows:minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
     font-size:1.1em;
+    font-weight: bold;
     margin-bottom:calc-Length-by-base-vertical-rythm($times: 1);
     text-align:center;
     @include triangele-sepalator($orange);
@@ -13,8 +14,7 @@
     & a:visited,
     & a:active{
         color:$white;
-        font-weight:bold;
-        text-decoration-color:$right-blue;
+        text-decoration-color:$white;
     }
 }
 
@@ -40,32 +40,3 @@
     grid-row:5/6;
     grid-template-columns:repeat(3, minmax(1px, 1fr));
 }
-
-/*.index-nav{
-    box-sizing:border-box;
-    display:grid;
-    grid-template-columns:repeat(3, minmax(calc(#{$card-size} / 2), 1fr));
-    margin:calc(#{$base-vertical-rythm} * 3) auto;
-    max-width:94%;
-    padding:1em 0;
-    text-align:center;
-    @include shadow;
-
-    & > a{
-        font:{
-            size:1.6em;
-            weight:bold;
-        }
-        grid-row:1 / 2;
-    }
-
-    & .search-form-wrapper{
-        grid-column:1 / 4;
-        grid-row:2 / 3;
-    }
-
-    & .mini-card{
-        grid-row:3 / 4;
-        width:100%;
-    }
-}*/
