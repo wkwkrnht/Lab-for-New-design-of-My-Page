@@ -7,6 +7,8 @@ $red:red;
 $right-blue:#3ff9dc;
 $blue:#03a9f4;
 $yellow:#eae3b4;
+$right-orange:#fab325;
+$orange:#f57c00;
 //$base-color:light-dark($white, $black);
 //$highlight-color:light-dark($black,$white);
 $base-color:#fff;
@@ -54,8 +56,8 @@ $embed-size:80vw;
 // Make a triangle to sepalate areas
 @mixin triangele-sepalator($color:transparent){
     background-color:$color;
-    clip-path:polygon(0 0, 100% 0, 100% 50%, 0 100%);
-    padding-bottom:calc-Length-by-base-vertical-rythm($times: 2);
+    clip-path:polygon(0 0, 100% 0, 100% 70%, 0 100%);
+    padding-bottom:calc-Length-by-base-vertical-rythm($times: 3);
     width:100dvw;
 }
 
