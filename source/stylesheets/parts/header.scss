@@ -12,7 +12,9 @@
     & a,
     & a:visited,
     & a:active{
-        color:currentColor;
+        color:$white;
+        font-weight:bold;
+        text-decoration:none;
     }
 }
 

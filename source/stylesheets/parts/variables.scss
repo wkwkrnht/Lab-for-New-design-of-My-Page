@@ -15,7 +15,7 @@ $base-color:#fff;
 $highlight-color:#333;
 
 // Sizes
-$base-vertical-rythm:2vh;
+$base-vertical-rythm:2dvh;
 $border-width:.5em;
 $card-size:27vmax;
 $ga_alert_size:54em;
@@ -56,8 +56,8 @@ $embed-size:80vw;
 // Make a triangle to sepalate areas
 @mixin triangele-sepalator($color:transparent){
     background-color:$color;
-    clip-path:polygon(0 0, 100% 0, 100% 70%, 0 100%);
-    padding-bottom:calc-Length-by-base-vertical-rythm($times: 3);
+    clip-path:polygon(0 0, 100% 0, 100% 80%, 0 100%);
+    padding-bottom:calc-Length-by-base-vertical-rythm($times: 4);
     width:100dvw;
 }
 
