@@ -80,7 +80,7 @@ OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SO
 
 :where(a){
     color:$right-blue;
-    text-decoration-color:linear-gradient(to left, transparent, 70%, $orange);
+    text-decoration-color:$orange;
     text-decoration-line:none;
     text-decoration-thickness:40%;
     text-underline-offset:.2ex;
