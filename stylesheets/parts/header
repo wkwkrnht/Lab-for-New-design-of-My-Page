@@ -12,7 +12,7 @@
   .site-header a, .site-header a:visited, .site-header a:active {
     color: #fff;
     font-weight: bold;
-    text-decoration: none; }
+    text-decoration-color: #3ff9dc; }
 
 .site-title {
   grid-row: 1/2;
