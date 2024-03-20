@@ -1,17 +1,17 @@
 .article-base {
   padding-bottom: 1em;
-  margin: calc(2vh * $times) auto;
+  margin: 6vh auto;
   max-width: 1600px;
   width: 96dvw;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
 
 .article-main .article-eyecatch {
-  margin: calc(2vh * $times) auto;
+  margin: 6vh auto;
   width: 100%; }
 
 .article-main > div {
-  margin: calc(2vh * $times) auto;
+  margin: 4vh auto;
   max-width: 80%; }
 
 .article-main p {
@@ -63,13 +63,13 @@
   counter-increment: c5; }
 
 .article-main ul, .article-main ol {
-  margin: calc(2vh * $times) auto;
+  margin: 2vh auto;
   max-width: 80%; }
 
 .article-main table {
   border-collapse: collapse;
   box-sizing: border-box;
-  margin: calc(2vh * $times) auto;
+  margin: 2vh auto;
   table-layout: fixed;
   width: calc(100% - 16vmin); }
   .article-main table caption {
@@ -90,7 +90,7 @@
 
 .article-main img, .article-main a[href*=".png"], .article-main a[href*=".jpg"], .article-main a[href*=".jpeg"], .article-main a[href*=".gif"] {
   display: block;
-  margin: calc(2vh * $times) auto; }
+  margin: 2vh auto; }
 
 .article-main img {
   height: auto;

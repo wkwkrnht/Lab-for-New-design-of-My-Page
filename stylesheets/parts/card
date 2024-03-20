@@ -7,7 +7,7 @@
 
 .mini-card {
   display: block;
-  margin: calc(2vh * $times) auto;
+  margin: 4vh auto;
   overflow: hidden;
   position: relative;
   height: 27vmax;
@@ -50,7 +50,7 @@
 .big-card {
   box-sizing: border-box;
   padding: 0 0 1em;
-  margin: calc(2vh * $times) auto;
+  margin: 6vh auto;
   max-width: 96%;
   background-color: white;
   box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }

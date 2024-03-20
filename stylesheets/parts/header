@@ -2,12 +2,12 @@
   color: #333;
   display: grid;
   grid-template-rows: minmax(1px, 2fr) repeat(4, minmax(1px, 1fr));
+  margin: 2vh 0;
   text-align: center;
-  margin: calc(2vh * $times) auto;
-  max-width: 1600px;
-  width: 96dvw;
-  background-color: white;
-  box-shadow: 0 0 3vmin rgba(0, 0, 0, 0.1); }
+  background-color: #03a9f4;
+  clip-path: polygon(0 0, 100% 0, 100% 50%, 0 100%);
+  padding-bottom: 4vh;
+  width: 100dvw; }
   .site-header a, .site-header a:visited, .site-header a:active {
     color: currentColor; }
 
